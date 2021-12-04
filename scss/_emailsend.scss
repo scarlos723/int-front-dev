@@ -1,0 +1,20 @@
+.email-image {
+  display: flex;
+  width: 132px;
+  height: 132px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: $TextInputField;
+  margin: 0px auto;
+  margin-bottom: 32px;
+}
+.recieve {
+  font-size: $sm;
+  color: $VerylightPink;
+  text-align: center;
+  a {
+    text-decoration: none;
+    color: $HospitalGreen;
+  }
+}
