@@ -1,0 +1,71 @@
+.desktop-menu {
+  width: 100px;
+  height: auto;
+  border: 1px solid $VerylightPink;
+  border-radius: 6px;
+  padding: 20px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      text-align: end;
+      a {
+        font-weight: bolder;
+        text-decoration: none;
+        color: black;
+        margin-top: 20px; //Cuando el elemento es inline no toma esta caracteristica
+        display: inline-block; // se agrega la caracteristica block para que se pueda aplicar margin
+      }
+    }
+    li:last-child {
+      margin-top: 20px;
+      border-top: 1px solid $VerylightPink;
+      a {
+        color: $HospitalGreen;
+      }
+    }
+  }
+}
+.ul-container {
+  display: flex;
+  height: 300px;
+  margin-top: 40px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.orders {
+  border-bottom: 1px solid $VerylightPink;
+}
+.mobile-menu {
+  padding-left: 28px;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-top: 24px;
+    li {
+      font-size: $md;
+      margin-bottom: 28px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-weight: bolder;
+      }
+    }
+  }
+  .user {
+    font-size: $sm;
+    li:nth-child(1) {
+      font-weight: lighter;
+      a {
+        color: $VerylightPink;
+      }
+    }
+    li:nth-child(2) {
+      a {
+        color: $HospitalGreen;
+      }
+    }
+  }
+}

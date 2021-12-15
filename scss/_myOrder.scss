@@ -1,0 +1,65 @@
+.my-order {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+.my-order-container {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  width: 300px;
+}
+
+.order-title {
+  margin-bottom: 40px;
+  font-size: $lg;
+  font-weight: bolder;
+}
+.info-order {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  background-color: $TextInputField;
+  margin-bottom: 24px;
+  border-radius: 8px;
+  padding: 0 24px;
+  p:nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    span:nth-child(1) {
+      font-size: $md;
+    }
+    span:nth-child(2) {
+      font-size: $sm;
+    }
+  }
+  p:nth-child(2) {
+    text-align: end;
+    font-weight: bolder;
+  }
+}
+.order-item {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 16px;
+  margin-bottom: 24px;
+  align-items: center;
+  figure {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    img {
+      border-radius: 20px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  p:nth-child(2) {
+    color: $VerylightPink;
+  }
+  p:last-child {
+    font-weight: bolder;
+    text-align: end;
+  }
+}
