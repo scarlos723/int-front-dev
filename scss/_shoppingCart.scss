@@ -1,0 +1,16 @@
+.shop-cart {
+  grid-template-columns: auto 1fr auto auto;
+}
+.title-container {
+  display: flex;
+  margin-bottom: 24px;
+  .title {
+    font-weight: bolder;
+    margin: 0;
+    padding: 0;
+    margin-left: 16px;
+  }
+  img {
+    transform: rotate(180deg);
+  }
+}
